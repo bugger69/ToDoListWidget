@@ -25,20 +25,22 @@ function btnRole(btn) {
 }
 
 submit.addEventListener('click', () => {
-    const li = document.createElement('li');
-    const  del = document.createElement('button');
-    del.innerText = "delete";
-    del.classList.add('del');
-    const done = document.createElement('button');
-    done.innerText = "Done";
-    done.classList.add('done');
-    li.append(input.value);
-    li.append(done);
-    li.append(del);
-    btnRole(del);
-    btnRole(done);
-    todolist.append(li);
-    input.value = "";
+    if(input.value !== "") {
+        const li = document.createElement('li');
+        const  del = document.createElement('button');
+        del.innerText = "delete";
+        del.classList.add('del');
+        const done = document.createElement('button');
+        done.innerText = "Done";
+        done.classList.add('done');
+        li.append(input.value);
+        li.append(done);
+        li.append(del);
+        btnRole(del);
+        btnRole(done);
+        todolist.append(li);
+        input.value = "";
+    }
 })
 
 remdone.addEventListener('click', () => {
