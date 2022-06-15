@@ -8,6 +8,7 @@ h1 {
 
 .cont {
     display : flex;
+    align-items: center;
 }
 
 .task {

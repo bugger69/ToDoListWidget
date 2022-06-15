@@ -37,9 +37,13 @@ submit.addEventListener('click', () => {
         span.classList.add('task');
         del.innerText = "delete";
         del.classList.add('del');
+        del.classList.add('button');
+        del.classList.add("is-success");
         const done = document.createElement('button');
         done.innerText = "Done";
         done.classList.add('done');
+        done.classList.add('button');
+        done.classList.add('is-danger');
         li.append(span);
         li.append(done);
         li.append(del);
