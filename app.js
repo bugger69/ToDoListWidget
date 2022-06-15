@@ -28,7 +28,7 @@ function btnRole(btn) {
     }
 }
 
-submit.addEventListener('click', () => {
+function createToDo() {
     if(input.value !== "" && input.value.length < 54) {
         const li = document.createElement('li');
         const  del = document.createElement('button');
@@ -55,7 +55,15 @@ submit.addEventListener('click', () => {
     } else if(input.value.length > 53) {
         alert("To do can't be longer than 53 chars!!!");
     }
-})
+}
+
+submit.addEventListener('click', createToDo);
+
+input.addEventListener('keydown', (e) => {
+    if(e.keyCode == 13) {
+        createToDo();
+    }
+});
 
 remdone.addEventListener('click', () => {
     const lis = document.querySelectorAll("li");
@@ -64,4 +72,4 @@ remdone.addEventListener('click', () => {
             li.remove();
         }
     }
-})
+});
