@@ -43,6 +43,7 @@ submit.addEventListener('click', () => {
         li.append(span);
         li.append(done);
         li.append(del);
+        li.classList.add('cont');
         btnRole(del);
         btnRole(done);
         todolist.append(li);
