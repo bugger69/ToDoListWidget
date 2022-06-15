@@ -5,3 +5,16 @@ h1 {
 .linethr {
     text-decoration: line-through;
 }
+
+.cont {
+    display : flex;
+}
+
+.task {
+    flex-grow : 1;
+    flex-wrap: wrap;
+}
+
+.done {
+    margin-right : 1%;
+}

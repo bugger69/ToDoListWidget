@@ -29,7 +29,7 @@ function btnRole(btn) {
 }
 
 submit.addEventListener('click', () => {
-    if(input.value !== "") {
+    if(input.value !== "" && input.value.length < 54) {
         const li = document.createElement('li');
         const  del = document.createElement('button');
         const span = document.createElement('span');
@@ -48,6 +48,8 @@ submit.addEventListener('click', () => {
         btnRole(done);
         todolist.append(li);
         input.value = "";
+    } else if(input.value.length > 53) {
+        alert("To do can't be longer than 53 chars!!!");
     }
 })
 
@@ -55,7 +57,6 @@ remdone.addEventListener('click', () => {
     const lis = document.querySelectorAll("li");
     for(let li of lis) {
         if(li.classList.contains('finished')) {
-            console.log(li.classList);
             li.remove();
         }
     }
