@@ -4,6 +4,8 @@ const submit = document.querySelector(".driver .new");
 
 const todolist = document.querySelector(".todolist .todo");
 
+const remdone = document.querySelector(".remdone");
+
 function btnRole(btn) {
     if(btn.classList.contains('del')) {
         btn.addEventListener('click', () => {
@@ -37,4 +39,13 @@ submit.addEventListener('click', () => {
     btnRole(done);
     todolist.append(li);
     input.value = "";
+})
+
+remdone.addEventListener('click', () => {
+    const lis = document.querySelectorAll("li");
+    for(let li of lis) {
+        if(li.classList.contains('linethr')) {
+            li.remove();
+        }
+    }
 })
