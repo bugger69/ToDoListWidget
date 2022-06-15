@@ -2,6 +2,10 @@ h1 {
     display : inline;
 }
 
+.driver {
+    margin-bottom: 3%;
+}
+
 .linethr {
     text-decoration: line-through;
 }
@@ -9,6 +13,7 @@ h1 {
 .cont {
     display : flex;
     align-items: center;
+    margin-bottom: 3%;
 }
 
 .task {

@@ -13,11 +13,13 @@
       <div class="columns">
         <div class="column is-one-quarter"></div>
         <div class="column is-half">
-          <div class="driver">
-            <span>To Do List</span>
-            <input type="text" class="input" />
-            <button class="new">Add</button>
-            <button class="remdone">Remove Done</button>
+          <div class="driver card">
+            <h1 class="title card-header">To Do List:</h1>
+            <div class="card-content"><input type="text" class="input" /></div>
+            <div class="card-footer">
+              <button class="new button is-medium is-primary card-footer-item">Add</button>
+              <button class="remdone button is-medium is-warning card-footer-item">Remove Done</button>
+            </div>
           </div>
           <div class="todolist">
             <ul class="todo"></ul>
