@@ -38,12 +38,12 @@ function createToDo() {
         del.innerText = "delete";
         del.classList.add('del');
         del.classList.add('button');
-        del.classList.add("is-success");
+        del.classList.add("is-danger");
         const done = document.createElement('button');
         done.innerText = "Done";
         done.classList.add('done');
         done.classList.add('button');
-        done.classList.add('is-danger');
+        done.classList.add('is-success');
         li.append(span);
         li.append(done);
         li.append(del);
