@@ -1,1 +1,1 @@
-To Do List widget in react.
+To Do List widget in vanilla javascript.
